@@ -1,0 +1,209 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 50px 200px 50px;
+  position: relative;
+  .header-image {
+    -webkit-animation: flicker-in-1 2s linear both;
+    animation: flicker-in-1 2s linear both;
+  }
+
+  &__sub {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    .title {
+      color: $yellow-color;
+      text-transform: uppercase;
+      font-size: 10rem;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 0.128em;
+      -webkit-animation: bounce-in-top 1.1s both;
+      animation: bounce-in-top 1.1s both;
+    }
+    .title:hover{
+        cursor: pointer;
+        -webkit-animation: vibrate-1 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: vibrate-1 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        color:$red-color;
+    }
+    .content {
+      cursor: context-menu;
+      color: $text-color;
+      font-size: 2.4rem;
+      position: absolute;
+      letter-spacing: 0.067em;
+      top: 42%;
+      left: 43%;
+      font-weight: 600;
+      line-height: 1.5em;
+      z-index: 1;
+      -webkit-animation: bounce-in-top 1.1s both 0.9s;
+      animation: bounce-in-top 1.1s both 0.9s;
+      .full-stack {
+        color: #4cd137;
+        text-transform: uppercase;
+      }
+      .full-stack:hover,
+      .clg:hover{
+          color:$yellow-color;
+          cursor: pointer;
+          
+      }
+      .clg {
+        color: $red-color;
+      }
+    }
+    .animated-content {
+      .baloon {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 66%;
+        left: 47%;
+        animation: baloonFly 12s ease-out infinite alternate 1.5s;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1420px) {
+  .header {
+
+    .header-image {
+      height: 540px;
+      width: 770px;
+    }
+    &__sub {
+      .title {
+        font-size: 8rem;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1210px) {
+  .header {
+    .header-image {
+      height: 440px;
+      width: 670px;
+    }
+    &__sub {
+      .title {
+        font-size: 7.5rem;
+        letter-spacing: 0.05em;
+      }
+      .content {
+        font-size: 1.9rem;
+        letter-spacing: 0.022em;
+        font-weight: 600;
+        top: 105%;
+        left: 3%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 990px) {
+  .header {
+    margin-bottom: 400px;
+    flex-wrap: wrap;
+    .header-image {
+      height: 340px;
+      width: 570px;
+    }
+    &__sub {
+      .title {
+        font-size: 8rem;
+        letter-spacing: 0.0025em;
+        z-index: 1;
+        margin-right: 20px;
+      }
+      .content {
+        font-size: 2rem;
+        letter-spacing: 0.079em;
+        font-weight: 400;
+        width: 380px;
+      }
+      .animated-content {
+        .baloon {
+          height: 200px;
+          width: 200px;
+          position: absolute;
+          top: 66%;
+          left: 7%;
+          animation: baloonFly 8s ease-out infinite alternate;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:562px){
+  .header {
+    margin-bottom: 450px;
+    flex-wrap: wrap;
+    .header-image {
+      height: 25rem;
+    }
+    &__sub {
+      .title {
+        text-align: center;
+        font-size: 6rem;
+        letter-spacing: 0.0025em;
+        z-index: 1;
+        // margin-right: 20px;
+      }
+      .content {
+        font-size: 2rem;
+        letter-spacing: 0.079em;
+        font-weight: 400;
+        width: 380px;
+      }
+      .animated-content {
+        .baloon {
+          height: 200px;
+          width: 200px;
+          position: absolute;
+          top: 62%;
+          left: 3%;
+          animation: baloonFly3 3s ease-out infinite alternate;
+        }
+      }
+    }
+  }
+
+}
+@media only screen and (max-width:430px){
+  .header {
+    margin-bottom: 550px;
+    flex-wrap: wrap;
+    .header-image {
+      height: 15rem;
+    }
+    &__sub {
+      .title {
+        text-align: center;
+        font-size: 6rem;
+        letter-spacing: 0.045em;
+        z-index: 1;
+        // margin-right: 20px;
+      }
+      .content {
+        font-size: 2rem;
+        letter-spacing: 0.079em;
+        font-weight: 400;
+        width: 280px;
+      }
+      .animated-content {
+        .baloon {
+          height: 200px;
+          width: 200px;
+          position: absolute;
+          top: 50%;
+          left: 3%;
+          animation: baloonFly2 2s ease-out infinite alternate;
+        }
+      }
+    }
+  }
+
+}

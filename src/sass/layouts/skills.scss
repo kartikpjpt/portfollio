@@ -1,0 +1,157 @@
+.skills {
+  margin: 60px 0px 100px 0px;
+  color: $text-color;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+   
+  .title-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    .skill-img{
+      height: 40rem;
+    }
+    .heading {
+      color:$yellow-color;
+      font-family: "Montserrat", sans-serif;
+      font-size: 4.3rem;
+      margin-bottom: 40px;
+      letter-spacing: .8em;
+     
+    }
+    
+    .heading:hover,
+    .items-title:hover{
+      overflow: hidden;
+      cursor: pointer;
+      animation: myAnim 2s ease 0s 1 normal forwards;
+      text-shadow: 0px 0px 50px $navbar-logo-color;
+    }
+  }
+  .items-title{
+    color: $yello-color-2;;
+    font-size: 2.8rem;
+    margin: 50px 0; 
+    letter-spacing: 0.24em;  
+  }
+  .items-title:hover{
+    overflow: hidden;
+    cursor: pointer;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    text-shadow: 0px 0px 50px $navbar-logo-color;
+  }
+  &__items {
+    font-size: 17rem;
+    margin: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 0px;
+    grid-row-gap:100px;
+    .fab{
+      transition: all .15s ease-in-out;
+    }
+    .fab:hover{
+      transform: scale(1.22);
+    }
+    .fa-html5{
+      color:#DD4B25;
+    }
+    .fa-css3-alt{
+      color:rgb(68,170,220);
+    }
+    .fa-js{
+      color:#EFD81D;
+    }
+    .fa-database{
+      color:#62AE3F;
+    }
+    .fa-react{
+      color:#5ED2F7;
+    }
+    .fa-node{
+      color:#659B60;
+    }
+    .fa-sass{
+      color:#CD679A;
+    }
+    .facpp img{
+      height: 18rem;
+      width: 17rem;
+    }
+    .fa-npm{
+      color:#C63935;
+    }
+    .fa-terminal{
+      color:#0C0C0C;
+    }
+    .fa-github{
+      color:#F0F6FC;
+    }
+  }
+}
+@media screen and (max-width:952px) {
+  .skills{
+
+    &__items{
+      font-size: 16rem;
+      grid-template-columns: repeat(3,1fr);
+    }
+    .facpp img{
+      height: 17rem;
+      width: 16rem;
+    }
+  }
+}
+@media screen and (max-width:702px) {
+  .skills{
+    .title-box{
+      .skill-img{
+        height: 26rem;
+      }
+      .heading{
+        letter-spacing: 0.35em;
+      }
+    }
+    .items-title{
+      letter-spacing: 0.07em;  
+    }
+    &__items{
+      font-size: 14rem;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .facpp img{
+      height: 15rem;
+      width: 14rem;
+    }
+  }
+}
+@media screen and (max-width:502px) {
+  .skills{
+    margin: 30px 0px;
+    .title-box{
+      .skill-img{
+        height: 20rem;
+      }
+      
+      .heading {
+        font-size: 3.2rem;
+        margin: 40px 0;
+      }
+    }
+    .items-title{
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+    }
+    &__items{
+      font-size: 12rem;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .facpp img{
+      height: 13rem;
+      width: 12rem;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+
+.hire-container{
+    color:$yellow-color;
+    margin: 200px 0;
+    .hire-me{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        .image-hire{
+            height: 40rem;
+            justify-self: flex-start;
+        }
+        color: #69C073;
+        .content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            .fiverr{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+             
+                padding: 10px;
+                cursor:context-menu;
+                h2{
+
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 4.6rem;
+                    color: #69C073;
+                    text-transform: uppercase;
+                    line-height: 2;
+                    letter-spacing: 0.208em;
+                }
+                h3{
+                    text-align: center;
+                    font-size: 2.8rem;
+                    letter-spacing: 0em;
+                   
+                    a{
+                        font-size: 3.2rem;
+                        color:#69C073;
+                        text-decoration: none;
+                        letter-spacing: 0;
+                        border: 2px solid transparent;
+                        padding: 2px;
+                        letter-spacing: 0.1em;
+                    }
+                    a:hover{
+                        overflow: hidden;
+                        border: 2px solid $red-color;
+                        color:$red-color;
+                        letter-spacing: 0.2em;
+                        
+                    }
+                }
+
+            }
+            
+            .resume{
+                margin-top: 100px;
+                span a{
+                    font-size: 4rem;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:$yellow-color;
+                }
+                span a:hover{
+                    border-bottom: 2px solid;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    .hire-container{
+        
+        .hire-me{
+            margin: 150px 0;
+            flex-wrap: wrap;
+            .image-hire{
+                height: 30rem;
+            }
+            .content{
+                .fiverr{
+                    h2{
+                        font-size:4rem ;
+                    }
+                    h3{
+                        font-size:2.4rem;
+                    }
+                }
+                .resume{
+                    margin-top: 80px;
+                    span a{
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:592px){
+    .hire-container{
+        
+        .hire-me{
+            margin: 110px 0;
+            flex-wrap: wrap;
+            .image-hire{
+                height: 25rem;
+            }
+            .content{
+                .fiverr{
+                    h2{
+                        font-size:3.4rem ;
+                    }
+                    h3{
+                        font-size:2.2rem;
+                    }
+                }
+                .resume{
+                    margin-top: 60px;
+                    span a{
+                        font-size: 2.6rem;
+                    }
+                }
+            }
+            
+        }
+    }
+}

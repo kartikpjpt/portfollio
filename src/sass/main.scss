@@ -1,0 +1,41 @@
+@import "abstracts/variables.scss";
+@import "abstracts/animations.scss";
+
+@import "layouts/header.scss";
+@import "layouts/navbar.scss";
+@import "layouts/skills.scss";
+@import "layouts/projects.scss";
+@import "layouts/hire.scss";
+@import "layouts/footer.scss";
+// Fonts 
+// font-family: 'Esteban', serif; for paratgraphs 
+// font-family: 'Montserrat', sans-serif; for headings
+// font-family: 'Montserrat Alternates', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat+Alternates:wght@700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Esteban', serif;
+    
+}
+html {
+    font-size: 10px;
+    background-color:  $background-color;
+    scroll-behavior: smooth;
+} 
+
+::-webkit-scrollbar {
+    width:5px;
+}
+
+::-webkit-scrollbar-track{
+    background:transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: $text-color;
+    
+}
+::-webkit-scrollbar-thumb:hover{
+    background: $red-color;
+}
